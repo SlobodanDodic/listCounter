@@ -1,0 +1,157 @@
+* {
+  margin: 0 auto;
+  padding: 1px 0px;
+}
+
+.container {
+  padding: 1px 15px 1px 15px;
+}
+
+br {
+  display: block;
+  content: "";
+  margin-top: 0.35rem;
+}
+
+.fa {
+  text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(255, 255, 255);
+}
+
+.fa:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  text-shadow: 1px 2px 2px rgb(0, 0, 0), 1px 2px 2px rgb(255, 255, 255);
+}
+
+.progress {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.progress-bar {
+  z-index: 1;
+  position: absolute;
+  border-radius: 3px;
+  text-align: left;
+}
+
+.progress span {
+  position: absolute;
+  z-index: 2;
+  text-align: left;
+}
+
+.col-1,
+.col-3,
+.col-4,
+.col-7 {
+  border: 1px solid rgba(241, 241, 241, 0.5);
+  color: black;
+  text-align: center;
+}
+
+.col {
+  border: 1px solid rgb(218, 215, 215);
+  color: black;
+  text-align: left;
+}
+
+#col-edit {
+  border-top-left-radius: 11px;
+  padding: 5px 0px;
+  background-color: rgba(248, 248, 255, 0.45);
+}
+
+#col-date {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 7px 0px;
+  background-color: rgba(199, 199, 204, 0.35);
+}
+
+#col-date-red {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 7px 0px;
+  background-color: rgba(199, 199, 204, 0.35);
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px 1px rgb(58, 58, 58);
+}
+
+#col-date-ago {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 7px 0px;
+  background-color: rgba(199, 199, 204, 0.35);
+  color: rgb(17, 0, 255);
+}
+
+#col-progress {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 4px 2px;
+  background-color: rgba(199, 199, 204, 0);
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px 1px rgb(58, 58, 58);
+}
+
+#col-progress-ago {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 4px 2px;
+  background-color: rgba(199, 199, 204, 0);
+  color: rgb(17, 0, 255);
+  text-shadow: 1px 1px 1px rgb(58, 58, 58);
+}
+
+#col-days {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 7px 0px;
+  background-color: rgba(199, 199, 204, 0.35);
+  letter-spacing: 1.25px;
+}
+
+#col-days-red {
+  font-size: 0.85rem;
+  font-weight: 900;
+  padding: 7px 0px;
+  background-color: rgba(199, 199, 204, 0.35);
+  letter-spacing: 1.25px;
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px 1px rgb(58, 58, 58);
+}
+
+#col-days-ago {
+  font-size: 0.85rem;
+  font-weight: 900;
+  padding: 7px 0px;
+  background-color: rgba(199, 199, 204, 0.35);
+  letter-spacing: 1.25px;
+  color: rgb(17, 0, 255);
+}
+
+#col-trash {
+  border-top-right-radius: 11px;
+  padding: 5px 0px;
+  background-color: rgba(248, 248, 255, 0.45);
+}
+
+/* #col-body {
+  border-radius: 0px 0px 11px 11px;
+  background-color: rgba(248, 248, 255, 0.75);
+  box-shadow: 0 12px 6px 0 rgba(0, 0, 0, 0.19), 0 9px 23px 0 rgba(0, 0, 0, 0.17);
+  text-indent: 1rem;
+  text-align: justify;
+  text-shadow: 1px 1px 2px rgb(255, 254, 254), 1px 0px 0px rgb(0, 0, 0);
+} */
+
+#col-body {
+  padding: 5px 5px;
+  border-radius: 0px 0px 11px 11px;
+  background-color: rgba(1, 1, 22, 0.55);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 12px 6px 0 rgba(0, 0, 0, 0.19), 0 9px 23px 0 rgba(0, 0, 0, 0.17);
+  text-indent: 1rem;
+  text-align: justify;
+}

@@ -1,0 +1,53 @@
+.App {
+  /*   border-left: 10px solid rgb(136, 137, 144);
+  border-right: 10px solid rgb(136, 137, 144);
+  border-top: 1px solid rgb(136, 137, 144);
+  border-bottom: 2px solid rgb(136, 137, 144);
+  border-radius: 14px;
+  box-shadow: inset 0px 1px 14px #000000; */
+  /* option two: */
+  padding: 5px;
+  border: 1px solid rgba(139, 137, 137, 0.15);
+  border-radius: 14px 14px 7px 7px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 10px rgba(255, 255, 255, 0.2),
+    inset 0 10px 20px rgba(255, 255, 255, 0.25),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  padding: 0px 10px;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  line-height: 1.15;
+  overflow: scroll;
+  background: rgba(128, 128, 128, 0.39);
+}
+
+body::before {
+  width: 90vw;
+  height: 90vh;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  filter: invert(0.5);
+  background-image: url("./swallow.png");
+  /*   background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.1);
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.44);
+}
