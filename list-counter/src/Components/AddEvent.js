@@ -28,9 +28,6 @@ export const AddEvent = () => {
       date,
     };
 
-    const dateOfNewEvent = Date.parse(newEvent.date);
-    console.log(dateOfNewEvent);
-
     addEvent(newEvent);
 
     setName("");
