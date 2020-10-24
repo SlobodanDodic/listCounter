@@ -33,11 +33,28 @@ export const EventProvider = ({ children }) => {
     });
   }
 
-  function editEvent(event) {
-    console.log(event.id);
-    console.log(event.name);
-    console.log(event.date);
-  }
+  /*   function editEvent(id) {
+    dispatch({
+      type: "EDIT",
+      payload: id,
+    });
+  } */
+
+  /*   function editEvent(id) {
+    const editedEvent = prompt("Make a change");
+    const { events } = state;
+    events.filter((event) => {
+      if (event.id === id + 1) {
+        event.name = editedEvent;
+      }
+      return event;
+    });
+    dispatch({
+      type: "EDIT",
+      payload: editedEvent,
+    });
+    console.log(editedEvent);
+  } */
 
   return (
     <EventContext.Provider
@@ -45,7 +62,7 @@ export const EventProvider = ({ children }) => {
         events: state.events,
         deleteEvent,
         addEvent,
-        editEvent,
+        /*         editEvent, */
       }}
     >
       {children}

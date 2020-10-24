@@ -13,11 +13,6 @@
   border-radius: 11px;
 }
 
-.grey-text {
-  background-color: rgba(248, 248, 255, 0.01);
-  color: #9e9e9e !important;
-}
-
 .form-control {
   display: inline;
 }
@@ -60,6 +55,7 @@
   margin: 1px;
   background-color: transparent;
   border-radius: 0;
+  font-family: "Font Awesome 5 Free";
 }
 
 .card-body {

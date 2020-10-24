@@ -6,7 +6,7 @@ import "./Event.css";
 import { MDBContainer, MDBRow, MDBCol, MDBProgress, MDBIcon } from "mdbreact";
 
 export const Event = ({ event }) => {
-  const { deleteEvent, editEvent } = useContext(EventContext);
+  const { deleteEvent } = useContext(EventContext);
 
   const dateToday = Date.now();
   const dateOfEvent = Date.parse(event.date);
@@ -32,13 +32,13 @@ export const Event = ({ event }) => {
   return (
     <MDBContainer>
       <MDBRow>
-        <MDBCol id="col-edit" size="1">
+        {/*         <MDBCol id="col-edit" size="1">
           <MDBIcon
             icon="pen-nib"
             className="fa-1x blue-text"
-            onClick={() => editEvent(event)}
+            onClick={() => editEvent(event.id)}
           />
-        </MDBCol>
+        </MDBCol> */}
 
         <MDBCol
           format={"dd MMMM yyyy"}
@@ -49,7 +49,7 @@ export const Event = ({ event }) => {
               ? "col-date-ago"
               : "col-date-red"
           }
-          size="3"
+          size="4"
         >
           <Moment format="DD MMM YY">{event.date}</Moment>
         </MDBCol>
